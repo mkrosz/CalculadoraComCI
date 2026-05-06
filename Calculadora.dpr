@@ -1,15 +1,6 @@
 program Calculadora;
-
-uses
-  Vcl.Forms,
-  UfrmPrincipal in 'UfrmPrincipal.pas' {frmPrincipal},
-  UCalculadora in 'UCalculadora.pas';
-
-{$R *.res}
-
+uses sysutils;
 begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.Run;
+  writeln('Calculadora Online via Jenkins');
+  writeln('Resultado: ', 10 + 20);
 end.
